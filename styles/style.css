@@ -8,7 +8,7 @@ body {
   background-color: #212121; 
   color: #ffffff;
   font-family: 'Helvetica', Arial, sans-serif;
-  letter-spacing: 0; 
+  letter-spacing: -1px; /* исправлено */
 }
 html {
   scroll-behavior: smooth;
@@ -48,21 +48,20 @@ html {
   color: #000;
 }
 
+/* Убрано color и border */
 .button.white-button {
   background-color: #ffffff;
-  color: #000000;
-  border: none;
 }
 
 .button.white-button:hover {
   background-color: #f8ff23;
-  color: #000000;
+  /* убран color */
 }
 
 .main {
   position: relative;
   overflow: hidden;
-  min-height: 910px; 
+  /* убран min-height */
 }
 
 
@@ -77,21 +76,23 @@ html {
 }
 
 .header {
-  position: relative;
-  z-index: 3; 
+  /* убраны position и z-index */
   padding: 46px 0;
 }
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  /* убраны justify-content и gap */
 }
 .logo img {
-  height: 18px;
-  display: block;
+  max-width: 129px; /* исправлено */
+  vertical-align: bottom; /* исправлено */
 }
 
+.menu {
+  margin-left: 177px;
+  margin-right: auto;
+}
 .menu ul {
   list-style: none;
   display: flex;
@@ -115,6 +116,7 @@ html {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: normal; /* добавлено */
 }
 .phone:hover {
   color: #f8ff23;
@@ -136,7 +138,7 @@ html {
   line-height: 100%;
   margin: 0 0 40px;
   font-weight: normal;
-  letter-spacing: -1px; 
+  /* убран letter-spacing */
 }
 .main-info p {
   font-size: 24px;
@@ -228,6 +230,7 @@ html {
   line-height: 120%;
   color: #d4d4d4;
   height: 100px;
+  letter-spacing: normal; /* добавлено */
 }
 .car-action {
   margin-top: auto;
@@ -261,15 +264,15 @@ html {
 .order {
   position: relative;
   padding: 130px 0;
-} /* вернули в поток */
+}
 .order .container {
   position: relative;
-} /* НИКАКОГО absolute */
+}
 
 .order img {
   position: absolute;
   top: -25px;
-  left: -530px; /* позиционирование от .order .container */
+  left: -530px;
 }
 
 .order h3 {
@@ -313,7 +316,7 @@ html {
 .footer {
   padding: 47px 0;
   border-top: 1px solid #5f5f5f;
-  background: #000; /* чтобы отделить от секции cars */
+  background: #000;
 }
 .footer .container {
   display: flex;
@@ -325,4 +328,5 @@ html {
   line-height: 90%;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: normal; /* добавлено */
 }
