@@ -48,7 +48,7 @@ Open [localhost](http://localhost:4200) to view in the browser.
 ⸻
 
 📸 Preview
-![Demo_cars_main](docs/images/main.png)
+![Demo_cars_main](images/main.png)
  
 
 ⸻
